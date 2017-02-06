@@ -1,12 +1,13 @@
 package jp.ac.uryukyu.ie.e165758;
 
-/**
- * Created by e165758 on 2017/01/25.
- */
+import jp.ac.uryukyu.ie.e165758.LivingThings.Enemys.*;
+import jp.ac.uryukyu.ie.e165758.LivingThings.Heros.*;
+import jp.ac.uryukyu.ie.e165758.LivingThings.LivingThing;
+
 public class Main {
     public static void main(String args[]) {
-        LivingThing hero = new LivingThing("勇者", 10);
-        LivingThing slime = new LivingThing("モンスター", 10);
-        Battle battle = new Battle(hero, slime);
+        LivingThing a = new Soldier("ゆうしゃ", 5);
+        LivingThing b = new Jelly("スライム", 3);
+        Battle battle = new Battle(a, b);
     }
 }
